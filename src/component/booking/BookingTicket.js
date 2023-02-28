@@ -29,7 +29,7 @@ export default function BookingTicket() {
     let bookActivity = async (form) => {
         if (token) {
             if (roleId == 5) {
-                let path = 'http://localhost:8887/qldv/activities/book';
+                let path = 'http://103.124.92.48:8888/qldv/activities/book';
                 let resp = await API.authorizedJSONBOOKPost(path, {
                     activitiesCode: location.state,
                     contact: form,

@@ -31,7 +31,7 @@ export default function BookingRoom({ hotelCode, packageId }) {
             try {
                 if (roleId == 5) {
                     if (new Date(checkoutDate).getTime() > new Date(checkinDate).getTime()) {
-                        let path = 'http://localhost:8887/qldv/hotel/book';
+                        let path = 'http://103.124.92.48:8888/qldv/hotel/book';
                         let objReq = {
                             hotelCode: hotelCode,
                             packageId: packageId,

@@ -24,7 +24,7 @@ export default function BookingRestaurant() {
 
         if (token) {
             if (roleId == 5) {
-                let path = 'http://localhost:8887/qldv/restaurant/book';
+                let path = 'http://103.124.92.48:8888/qldv/restaurant/book';
                 let resp = await API.authorizedJSONBOOKPost(path, {
                     restaurantCode: location.state,
                     contact: form,
